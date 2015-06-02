@@ -1,0 +1,29 @@
+
+
+h1 {
+  text-align: center;
+  font-size: 42px;
+  color: purple;
+}
+
+.account-info-section {
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin-top: 40px;
+  font-size:18px;
+}
+
+.transaction-section {
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+.create-account-section {
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin-top: 35px;
+  padding-bottom: 30px;
+
+}

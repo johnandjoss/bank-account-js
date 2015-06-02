@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Bank Account</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bank Account</h1>
+
+      <div class="row create-account-section">
+        <div class="col-md-6">
+          <h2>Sign up for an account:</h2>
+          <form id="new-bank-account">
+            <div class="form-group">
+              <label for="new-owner-name">account-owner-name</label>
+              <input type="text" class="form-control new-owner-name">
+            </div>
+            <div class="form-group">
+              <label for="new-initial-deposit">account-initial-deposit</label>
+              <input type="text" class="form-control account_initial_deposit">
+            </div>
+
+            <button type="submit" class="btn btn-info create-account">Create Account</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row transaction-section">
+        <div class="col-md-6">
+          <h2>Make a Transaction:</h2>
+          <form id="new-transaction">
+            <div class="form-group">
+              <label for="new-withdrawal">Withdraw Funds</label>
+              <input type="text" class="form-control new-withdrawal">
+            </div>
+            <div class="form-group">
+              <label for="new-deposit">Deposit Funds</label>
+              <input type="text" class="form-control new-deposit">
+            </div>
+
+            <button type="submit" class="btn btn-info create-transaction">Calculate</button>
+          </form>
+        </div>
+      </div>
+
+
+        <div class="row account-info-section">
+        <div class="col-md-6">
+            <div id="show-account-info">
+              <h2></h2>
+
+              <p>Account Owner Name: <span class="first-name"></span></p>
+              <p>Balance: <span class="current-balance"></span></p>
+
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
