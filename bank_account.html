@@ -35,12 +35,12 @@
           <form id="transaction-withdrawal">
             <div class="form-group">
               <label for="new-withdrawal">Withdraw Funds</label>
-              <input type="text" class="form-control new-withdrawal">
+              <input type="text" value="0.00" class="form-control new-withdrawal" placeholder="0.00">
             </div>
 
             <div class="form-group">
               <label for="new-deposit">Deposit Funds</label>
-              <input type="text" class="form-control new-deposit">
+              <input type="text" value="0.00" class="form-control new-deposit" placeholder="0.00">
             </div>
 
             <button type="submit" class="btn btn-info create-transaction">Calculate</button>
@@ -56,7 +56,7 @@
 
               <p>Account Owner Name: <span class="first-name"></span></p>
               <p>Balance: <span class="current-balance"></span></p>
-
+              <button id="clear-account" class="btn btn-info">Delete Account</button>
             </div>
         </div>
       </div>
