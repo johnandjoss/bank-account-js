@@ -23,9 +23,31 @@ $(document).ready(function() {
 
     $(".first-name").text(newAccount.ownerName);
     $(".current-balance").text(newAccount.balance);
+
+
+  $("form#transaction-withdrawal").submit(function(event){
+    event.preventDefault();
+
+    var inputtedWithdrawalAmount = parseFloat($("input.new-withdrawal").val());
+    var newWithdrawal = newAccount.withdrawal(inputtedWithdrawalAmount);
+    alert(newWithdrawal);
+
+    $(".first-name").text(newAccount.ownerName);
+    $(".current-balance").text(newAccount.balance);
+
   });
 
+  $("form#transaction-deposit").submit(function(event){
+    event.preventDefault();
 
+    var inputtedDepositAmount = parseFloat($("input.new-deposit").val());
+    var newDeposit = newAccount.deposit(inputtedDepositAmount);
+    alert(newDeposit);
 
+    $(".first-name").text(newAccount.ownerName);
+    $(".current-balance").text(newAccount.balance);
+  });
+
+});
 
 });
